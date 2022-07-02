@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Navbar from "./navbar";
+import Sidebar from "./sidebar";
 
 interface Props {
   children: ReactNode;
@@ -7,10 +8,11 @@ interface Props {
 
 function AdminLayout({ children }: Props) {
   return (
-    <>
+    <div className="flex">
       <Navbar />
-      {children}
-    </>
+      <Sidebar />
+      <main className="mt-16">{children}</main>
+    </div>
   );
 }
 

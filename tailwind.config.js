@@ -6,7 +6,11 @@ module.exports = {
     "./src/layouts/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        sidebar: "17.5rem",
+      },
+    },
   },
   plugins: [],
 };
